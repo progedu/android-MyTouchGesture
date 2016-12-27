@@ -59,7 +59,7 @@ public class MyCustomView extends View {
                 final float dx = x - mLastTouchX;
                 final float dy = y - mLastTouchY;
 
-                if(mBounds != null) {
+                if(mBounds != null && mBounds.contains(x, y)) {
                     mBounds.set(
                             mBounds.left + dx,
                             mBounds.top + dy,
