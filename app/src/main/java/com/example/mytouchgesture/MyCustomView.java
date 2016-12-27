@@ -36,7 +36,7 @@ public class MyCustomView extends View {
         canvas.save();
         canvas.scale(mScaleFactor, mScaleFactor);
 
-        canvas.drawOval(
+        canvas.drawRect(
                 mBounds,
                 mPaint
         );
